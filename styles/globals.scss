@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
   @include common-scroll;
+  overflow-x: auto;
 }
 
 a {

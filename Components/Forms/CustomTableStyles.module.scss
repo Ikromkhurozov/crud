@@ -4,17 +4,19 @@
   display: flex;
   align-items: end;
   flex-direction: column;
-  overflow-x: scroll;
   margin: 1rem auto;
   max-width: 1800px;
   padding: 0.5rem;
 
+  @media (max-width: 768px) {
+    margin-top: 130px;
+  }
+
   .table {
-    width: 100%;
-    max-width: 1800px;
-    border-collapse: collapse;
+    overflow-x: auto;
     border: 1px solid #ddd;
     min-width: max-content;
+    border-collapse: collapse;
 
     th,
     td {
